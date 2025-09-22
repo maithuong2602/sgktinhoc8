@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook - Máy Tính và Cộng Đồng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .page {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+            display: none; /* Ẩn tất cả các trang ban đầu */
+        }
+        .page.active {
+            display: block; /* Hiển thị trang đang hoạt động */
+        }
+        .page-header {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .page-header h1 {
+            color: #007bff;
+            font-size: 24px;
+            margin: 0;
+        }
+        .page-header h2 {
+            font-size: 20px;
+            margin: 0;
+            margin-left: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-header {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            font-weight: bold; /* Làm nổi bật tiêu đề */
+            color: #1a5276; /* Đổi màu tiêu đề */
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .text-column {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image-container {
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .page-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #888;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .nav-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Page 1 -->
+<div class="page active" id="page-1">
+    <div class="page-header">
+        <h1>CHỦ ĐỀ 2. TỔ CHỨC LƯU TRỮ, TÌM KIẾM VÀ TRAO ĐỔI THÔNG TIN</h1>
+    </div>
+
+    <div class="section">
+        <h2 style="color: #4CAF50;">BÀI 2</h2>
+        <h1 style="color: #4CAF50;">THÔNG TIN TRONG MÔI TRƯỜNG SỐ</h1>
+
+        <h3>Sau bài học này em sẽ:</h3>
+        <ul>
+            <li>Nêu được các đặc điểm của thông tin số: đa dạng, được thu thập ngày càng nhanh và nhiều, được lưu trữ với dung lượng khổng lồ bởi nhiều tổ chức và cá nhân, có tính bản quyền, có độ tin cậy khác nhau, có các công cụ tìm kiếm, chuyển đổi, truyền và xử lí hiệu quả.</li>
+            <li>Trình bày được tầm quan trọng của việc biết khai thác các nguồn thông tin đáng tin cậy và biết được ví dụ minh hoạ.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <div class="section-header">
+            1. THÔNG TIN TRONG MÔI TRƯỜNG SỐ
+        </div>
+        
+        <p><strong>Hoạt động 1</strong> Ảnh in và ảnh số</p>
+        
+        <div class="content">
+            <div class="text-column">
+                <p>Trong tập ảnh cũ, Khoa thấy bức ảnh ruộng bậc thang. Để chia sẻ ảnh với An mà không cần phải đến nhà bạn, Khoa đã dùng điện thoại thông minh chụp lại bức ảnh và gửi cho An qua thư điện tử. Em hãy cho biết:</p>
+                <ol>
+                    <li>An có thể nhận được ảnh bằng cách nào?</li>
+                    <li>Sau khi An nhận được ảnh, Khoa có bị mất bức ảnh gốc không?</li>
+                    <li>An có thể lưu trữ ảnh vào những thiết bị nào?</li>
+                </ol>
+            </div>
+            <div class="image-container">
+                <img src="https://i.postimg.cc/tT9DLGFJ/2-1.png" alt="Hình 2.1. Bức ảnh được chụp lại và gửi qua mạng">
+            </div>
+        </div>
+
+        <p>Trong Hoạt động 1, bằng thao tác chụp lại bức ảnh, Khoa đã tạo ra một bức ảnh số. Khác với bức ảnh trên giấy, bức ảnh số được tạo ra không tốn vật liệu và khi Khoa gửi cho An, Khoa không bị mất đi bức ảnh đó.</p>
+        <p>Thông tin được mã hoá thành dãy bit, được chuyển vào máy tính, điện thoại thông minh, máy tính bảng... để có thể lan truyền, trao đổi trong môi trường kĩ thuật số còn được gọi gọn là <strong>thông tin số.</strong></p>
+    </div>
+    <div class="page-number">10</div>
+</div>
+
+<!-- Page 2 -->
+<div class="page" id="page-2">
+    <div class="page-header">
+        <h1>CHỦ ĐỀ 2. TỔ CHỨC LƯU TRỮ, TÌM KIẾM VÀ TRAO ĐỔI THÔNG TIN</h1>
+    </div>
+    <div class="section">
+        <div class="content">
+            <div class="text-column">
+                <p>Thông tin số có thể được truy cập từ xa thông qua kết nối Internet. Chẳng hạn, khi được Khoa chia sẻ, An có thể vào hộp thư điện tử của mình để nhận ảnh mà không cần nhận trực tiếp từ Khoa như nhận bức ảnh in trên giấy. An có thể lưu ảnh về máy tính hoặc điện thoại của mình và chỉnh sửa bằng phần mềm ứng dụng rồi tiếp tục chia sẻ cho người khác.
+                </p>
+            </div>
+            <div class="text-column">
+                <p>Thông tin số dễ dàng được nhân bản và chia sẻ. Thông tin số còn có thể được lan truyền tự động do nhiều thiết bị được đồng bộ với nhau. Điều đó khiến cho An khó biết được thiết bị nào đã nhận được thông tin hoặc thông tin sẽ lan rộng đến mức nào. Thông tin số khó bị xoá bỏ hoàn toàn.
+                </p>
+            </div>
+        </div>
+        <p><strong>Thông tin số có những đặc điểm chính sau:</strong></p>
+        <ul>
+            <li>Thông tin số dễ dàng được nhân bản và lan truyền nhưng khó bị xoá bỏ hoàn toàn.</li>
+            <li>Thông tin số có thể được truy cập từ xa nếu người quản lí thông tin đó cho phép.</li>
+        </ul>
+
+        <p><strong>Hoạt động 2</strong> Thông tin số</p>
+        <div class="content">
+            <div class="text-column">
+                <p>Khoa gửi cho An bức ảnh ruộng bậc thang qua thư điện tử. Nhận được, An chỉnh sửa lại ảnh cho đẹp hơn và sử dụng nó làm nền cho ảnh của mình rồi đưa lên trang cá nhân trên mạng xã hội. Em hãy cho biết:</p>
+                <ol>
+                    <li>Máy chủ của dịch vụ thư điện tử có lưu trữ bức ảnh Khoa gửi không?</li>
+                    <li>Những ai có thể xem được bức ảnh An đưa lên mạng xã hội?</li>
+                    <li>An có thể gửi ảnh sau khi chỉnh sửa cho Khoa hoặc các bạn khác được không?</li>
+                </ol>
+            </div>
+            <div class="image-container">
+                <img src="https://i.postimg.cc/ZnRH5P7h/2-2.png" alt="Hình 2.2. Bức ảnh được sử dụng làm nền">
+            </div>
+        </div>
+        
+        <p><strong>b) Thông tin số trong xã hội</strong></p>
+        <div class="content">
+            <div class="text-column">
+                <p>Khi bức ảnh đã được chia sẻ qua một ứng dụng, ví dụ thư điện tử, mạng xã hội, nó sẽ được ứng dụng đó lưu trữ lại và cho phép một số người được tiếp cận hay tiếp tục chia sẻ. Thông tin số có thể được lưu trữ với dung lượng rất lớn bởi nhiều cá nhân, tổ chức và được cấp quyền truy cập khác nhau.</p>
+            </div>
+            <div class="text-column">
+                <p>Không phải mọi thông tin trên mạng đều chân thực. An có thể lấy bức ảnh ruộng bậc thang nhận được làm nền cho ảnh của mình, nhưng không có nghĩa là An đã tới Yên Bái, nơi có ruộng bậc thang. Thông tin số dễ dàng được chỉnh sửa và lại tiếp tục được lan truyền trên mạng. Thông tin số có <strong>độ tin cậy</strong> rất khác nhau, phụ thuộc vào nguồn gốc và mục tiêu tạo ra.</p>
+            </div>
+        </div>
+    </div>
+    <div class="page-number">11</div>
+</div>
+
+<!-- Page 3 -->
+<div class="page" id="page-3">
+    <div class="page-header">
+        <h1>CHỦ ĐỀ 2. TỔ CHỨC LƯU TRỮ, TÌM KIẾM VÀ TRAO ĐỔI THÔNG TIN</h1>
+    </div>
+    <div class="section">
+        <ul>
+            <li>Thông tin số đa dạng, được thu thập nhanh, được lưu trữ với dung lượng rất lớn bởi nhiều tổ chức và cá nhân.</li>
+            <li>Có nhiều công cụ hỗ trợ tìm kiếm, truy cập, lưu trữ, xử lí và chia sẻ thông tin số.</li>
+            <li>Quyền tác giả của thông tin số được pháp luật bảo hộ.</li>
+            <li>Thông tin số có mức độ tin cậy khác nhau.</li>
+            <li>Thông tin số cần được quản lí, khai thác an toàn và có trách nhiệm.</li>
+        </ul>
+        <div class="content">
+            <div class="text-column">
+                <div style="background-color: #e6f7ff; padding: 15px; border-radius: 8px;">
+                    <p><strong>Em hãy chọn phương án ghép đúng:</strong></p>
+                    <p>Thông tin số được nhiều tổ chức và cá nhân lưu trữ với dung lượng rất lớn, được truy cập tự do và có độ tin cậy khác nhau.</p>
+                    <ol>
+                        <li>được bảo hộ quyền tác giả và không đáng tin cậy.</li>
+                        <li>được bảo hộ quyền tác giả và có độ tin cậy khác nhau.</li>
+                        <li>được bảo hộ quyền tác giả và rất đáng tin cậy.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header">2. THÔNG TIN ĐÁNG TIN CẬY</div>
+        <p><strong>Hoạt động 3</strong> Tin giả</p>
+        <div class="content">
+            <div class="text-column">
+                <p>Em hãy kể lại một nội dung trên mạng mà em biết đó là tin giả.</p>
+                <p>Tin giả đó gây ra tác hại gì nếu người đọc tin vào điều đó?</p>
+                <p>Làm thế nào để em biết đó là tin giả?</p>
+            </div>
+            <div class="image-container">
+                <img src="https://i.postimg.cc/MHFDMcNf/2-3.png" alt="Hình 2.3. Tin giả">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text-column">
+                <p>Không phải mọi thông tin chúng ta nghe thấy, xem được hay đọc được đều là sự thật. Internet là một kho thông tin khổng lồ. Tuy nhiên, nhiều thông tin trên Internet có thể không đáng tin cậy. Thông tin không đáng tin cậy có thể là:</p>
+                <ul>
+                    <li><strong>Thông tin không trung thực</strong>, mang tính chất lừa dối.</li>
+                    <li><strong>Thông tin dồn thổi</strong>, dẫn đến kết luận thiếu căn cứ.</li>
+                    <li><strong>Thông tin thiếu kiểm chứng</strong> dẫn đến quyết định sai lầm.</li>
+                </ul>
+            </div>
+            <div class="text-column">
+                <p>Thông tin không đáng tin cậy có giá trị sử dụng thấp, thậm chí không sử dụng được. Việc xác định thông tin đáng tin cậy và biết khai thác nguồn thông tin đáng tin cậy rất quan trọng vì điều đó giúp em đưa ra những quyết định đúng đắn. Chẳng hạn, nếu không biết khai thác nguồn thông tin đáng tin cậy, mà tin vào những quảng cáo quá mức, em có thể tiêu tiền một cách lãng phí. Sau đây là một số gợi ý giúp em xác định được thông tin đáng tin cậy hay không:</p>
+            </div>
+        </div>
+    </div>
+    <div class="page-number">12</div>
+</div>
+
+<!-- Page 4 -->
+<div class="page" id="page-4">
+    <div class="page-header">
+        <h1>CHỦ ĐỀ 2. TỔ CHỨC LƯU TRỮ, TÌM KIẾM VÀ TRAO ĐỔI THÔNG TIN</h1>
+    </div>
+    <div class="section">
+        <div class="content">
+            <div class="text-column">
+                <h3>Phân biệt ý kiến và sự kiện.</h3>
+                <p><strong>Ý kiến</strong> là quan điểm, không phải sự kiện. Trong khi đó, <strong>sự kiện</strong> cần được kiểm soát và có thể cung cấp bằng chứng để tin cậy. Ý kiến của chúng ta thường được hình thành bởi nhiều cảm xúc và định kiến cá nhân. Chẳng hạn, câu nói: "Tôi nghĩ rằng người đó đã làm điều gì đó sai trái" là một ý kiến. Mặc dù ý kiến có thể dựa trên các sự kiện, nhưng chúng không nhất thiết là sự kiện thực tế.</p>
+                <p>Để phân biệt ý kiến và sự kiện, em có thể xem xét ngữ cảnh:</p>
+                <ul>
+                    <li><strong>Sự kiện</strong> là một tuyên bố đã được xác minh hoặc có thể kiểm tra.</li>
+                    <li><strong>Ý kiến</strong> thường liên quan đến cảm xúc, quan điểm, hoặc niềm tin.</li>
+                </ul>
+            </div>
+            <div class="text-column">
+                <h3>Đánh giá tính thời sự của thông tin.</h3>
+                <p>Thời điểm công bố thông tin quan trọng vì nó quyết định thông tin có còn ý nghĩa hay đã trở nên lỗi thời. Chẳng hạn, nội dung những trang web đã lâu không được cập nhật thường có độ tin cậy thấp.</p>
+                <div style="background-color: #e6f7ff; padding: 15px; border-radius: 8px;">
+                    <ul>
+                        <li>Thông tin đáng tin cậy giúp em đưa ra kết luận đúng, quyết định hành động đúng và giải quyết được các vấn đề được đặt ra.</li>
+                        <li>Một số cách xác định thông tin có đáng tin cậy hay không: kiểm tra nguồn thông tin; phân biệt ý kiến với sự kiện; kiểm tra chứng cứ của kết luận; đánh giá tính thời sự của thông tin.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>LUYỆN TẬP</h3>
+        <ol>
+            <li>Em hãy kể tên ba ứng dụng thu thập nhiều thông tin từ người sử dụng và cho biết:</li>
+            <ul>
+                <li>a) Tổ chức, cá nhân nào sở hữu các ứng dụng đó?</li>
+                <li>b) Mỗi ứng dụng thu thập dạng thông tin nào?</li>
+            </ul>
+            <li>Em hãy đánh giá độ tin cậy của thông tin được cung cấp từ ba ứng dụng ở Câu 1.</li>
+        </ol>
+        
+        <h3>VẬN DỤNG</h3>
+        <ol>
+            <li>Em hãy tìm kiếm trên Internet thông tin về một đội bóng, một cầu thủ hoặc một nhân vật mà em yêu thích.</li>
+            <li>Em hãy phân tích mức độ tin cậy của nguồn tin tìm được ở Câu 1 và trình bày một bài giới thiệu về đội bóng, cầu thủ hoặc nhân vật đó.</li>
+            <li>
+                Em hãy kể một ví dụ về tin đồn (trong cuộc sống hoặc trên mạng) và cho biết:
+                <ul>
+                    <li>a) Tin đồn đó xuất hiện từ sự việc nào?</li>
+                    <li>b) Tác hại của tin đồn đó là gì?</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="page-number">13</div>
+</div>
+
+<!-- Navigation Controls -->
+<div class="navigation">
+    <button id="prev-btn" class="nav-button">Trang trước</button>
+    <button id="next-btn" class="nav-button">Trang sau</button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const pages = document.querySelectorAll('.page');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        let currentPageIndex = 0;
+
+        function showPage(index) {
+            pages.forEach((page, i) => {
+                page.classList.toggle('active', i === index);
+            });
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === pages.length - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPageIndex > 0) {
+                currentPageIndex--;
+                showPage(currentPageIndex);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPageIndex < pages.length - 1) {
+                currentPageIndex++;
+                showPage(currentPageIndex);
+            }
+        });
+
+        // Initialize with the first page
+        showPage(currentPageIndex);
+    });
+</script>
+
+</body>
+</html>
